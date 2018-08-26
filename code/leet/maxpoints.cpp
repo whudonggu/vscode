@@ -20,7 +20,7 @@ int maxPoints(vector<Point> &points){
         return 2;
     int res = 0;
 
-    if (int i = 0; i < length;i++)
+    for (int i = 0; i < length;i++)
     {
         int currentMax = 1;
         int dup = 0;
