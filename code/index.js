@@ -4,5 +4,6 @@ $(function () {
         autoplay: 2000,
         pagination: '.swiper-pagination',
         loop:true,
+        111111111,
     })
 })
