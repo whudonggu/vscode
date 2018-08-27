@@ -52,5 +52,6 @@ int main()
             cout << result[i].at(j);
         cout<<'\n';
     }
+    int a;
     return 0;
 }
