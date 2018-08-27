@@ -64,5 +64,6 @@ int main()
         cout << head->val<<'\n';
         head = head->next;
     }
-        return 0;
+    int a;
+    return 0;
 }
