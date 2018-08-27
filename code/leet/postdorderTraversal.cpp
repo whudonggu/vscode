@@ -9,6 +9,7 @@ public:
             postorderTraversal(root->right);
             res.push_back(root->val);
         }
+        int a=0;
         return res;
     }
 };
