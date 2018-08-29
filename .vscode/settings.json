@@ -40,6 +40,7 @@
         "array": "cpp",
         "string_view": "cpp",
         "iostream": "cpp",
-        "algorithm": "cpp"
+        "algorithm": "cpp",
+        "deque": "cpp"
     }
 }

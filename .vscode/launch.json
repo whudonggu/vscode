@@ -9,7 +9,7 @@
             "name": "(gdb) Launch",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceRoot}/code/${fileBasenameNoExtension}.exe",// 将要进行调试的程序的路径
+            //"program": "${workspaceRoot}/code/${fileBasenameNoExtension}.exe",// 将要进行调试的程序的路径
             "program": "${workspaceRoot}/code/leet/${fileBasenameNoExtension}.exe",// 将要进行调试的程序的路径
             //"program": "${workspaceRoot}/code/dp/${fileBasenameNoExtension}.exe",// 将要进行调试的程序的路径
             "args": [],
