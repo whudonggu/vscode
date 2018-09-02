@@ -41,6 +41,10 @@
         "string_view": "cpp",
         "iostream": "cpp",
         "algorithm": "cpp",
-        "deque": "cpp"
+        "deque": "cpp",
+        "*.tcc": "cpp",
+        "list": "cpp",
+        "unordered_map": "cpp",
+        "unordered_set": "cpp"
     }
 }
