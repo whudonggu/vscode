@@ -7,7 +7,7 @@ using namespace std;
 
 class Solution {
 public:
-    vector<string> wordBreak(string s, unordered_set<string> &dict) {
+    vector<vector<string>> wordBreak(string s, unordered_set<string> &dict) {
         int len = s.size();
         dp = new vector<bool>[s.size()];
        for (int i = 0; i < len;i++)
@@ -18,7 +18,7 @@ public:
             }
         }
         handleStr(len - 1, s);
-        reverse(res.begin(),res.end());
+        //reverse(res.begin(),res.end());
         return res;
     }
     bool match(string str,unordered_set<string> &dict)
@@ -31,12 +31,10 @@ public:
     {
         if(i==-1)
         {
-            string str;
-            for (int j = mystring.size() - 1; j >= 0;j--)
+            vector<string> str;
+            for (int j = mystring.size()-1; j >=0 ;j--)
             {
-                str += mystring[j];
-                if(j!=0)
-                    str += " ";
+                str.push_back(mystring[j]);
             }
             res.push_back(str);
         }
@@ -52,7 +50,7 @@ public:
             }
         }
     }
-    vector<string> res;
+    vector<vector<string>> res;
     vector<string> mystring;
     vector<bool> *dp;
 };

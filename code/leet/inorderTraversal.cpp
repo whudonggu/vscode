@@ -12,11 +12,7 @@ struct TreeNode {
 };
 
 
-struct BTNode
-{
-    bool isFirst;
-    TreeNode *node;
-};
+
 
 class Solution {
 public:
@@ -56,14 +52,19 @@ public:
 
 int main()
 {
+    //int *mm = nullptr;
     Solution yb;
     TreeNode *root = new TreeNode(2);
     TreeNode *t1 = new TreeNode(1);
     TreeNode *t2 = new TreeNode(4);
     TreeNode *t3 = new TreeNode(5);
+    TreeNode *t4 = new TreeNode(6);
+    TreeNode *t5 = new TreeNode(7);
     root->left = t1;
     root->right = t2;
     t2->right = t3;
+    t1->right = t4;
+    t4->left = t5;
     //yb.inorderTraversal1(root);
     yb.inorderTraversal2(root);
     return 0;
